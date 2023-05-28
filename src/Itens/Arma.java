@@ -7,6 +7,7 @@ public class Arma extends ItemHeroi{
     private int atk;
 
 
+
     public Arma(String nome, int preco, int atk, ArrayList<ItemTipoHeroi> tipoHeroi) {
         super(nome, preco, tipoHeroi);
         this.atk =  atk;
@@ -21,18 +22,23 @@ public class Arma extends ItemHeroi{
     }
 
     @Override
+    public void lookItem() {
+
+
+        System.out.println("You see ");
+        System.out.println( "name: " + getNome() + ".");
+        System.out.println("price: " + getPreco() + ".");
+
+        for(ItemTipoHeroi item: super.getTipoHeroi()){
+
+            System.out.println(item);
+
+        }
+    }
+
+    @Override
 
     public int getPreco() {
         return super.getPreco();
-    }
-
-
-    public void lookCharacter(){
-        System.out.println("You see " + getNome()+ ".");
-        System.out.println("HP: " + getPreco() + ".");
-        System.out.println("Damage: " + getAtk() + ".");
-
-
-
     }
 }

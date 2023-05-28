@@ -2,7 +2,7 @@ package Itens;
 
 import java.util.ArrayList;
 
-public class ItemHeroi {
+public abstract class ItemHeroi {
 
     private String nome;
     private int preco;
@@ -15,16 +15,8 @@ public class ItemHeroi {
 
 
 
-    public void lookItem() {
-        System.out.println("You see ");
-        System.out.println( "name: " + getNome() + ".");
-        System.out.println("price: " + getPreco() + ".");
-        for(ItemTipoHeroi item:TipoHeroi){
+    public abstract void lookItem();
 
-            System.out.println(item);
-
-        }
-    }
 
 
     public String getNome() {

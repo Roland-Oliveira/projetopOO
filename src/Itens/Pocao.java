@@ -10,6 +10,7 @@ public class Pocao extends ItemHeroi{
         this.valorCura = valorCura;
     }
 
+
     public int getValorCura() {
         return valorCura;
     }
@@ -18,5 +19,10 @@ public class Pocao extends ItemHeroi{
         this.valorCura = valorCura;
     }
 
-
+    @Override
+    public void lookItem() {
+        System.out.println("You see ");
+        System.out.println( "name: " + getNome() + ".");
+        System.out.println("price: " + getPreco() + ".");
+    }
 }

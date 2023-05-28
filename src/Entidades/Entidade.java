@@ -2,11 +2,11 @@ package Entidades;
 
 public abstract class Entidade {
     private String nome;
-    private int hp;
+    private double hp;
 
-    private int damage;
+    private double damage;
 
-    public Entidade (String nome, int hp, int damage){
+    public Entidade (String nome, double hp, double damage){
         this.nome = nome;
         this.hp = hp;
         this.damage = damage;
@@ -23,19 +23,19 @@ public abstract class Entidade {
         this.nome = nome;
     }
 
-    public int getDamage() {
+    public double getDamage() {
         return damage;
     }
 
-    public void setDamage(int damage) {
+    public void setDamage(double damage) {
         this.damage = damage;
     }
 
-    public int getHp() {
+    public double getHp() {
         return hp;
     }
 
-    public void setHp(int hp) {
+    public void setHp(double hp) {
         this.hp = hp;
     }
 
