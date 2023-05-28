@@ -5,29 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d996d6a-23ff-4bc7-80cb-454a6695b2a8" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projetoPoo/Entidades/Entidade.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projetoPoo/Entidades/Entidade.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projetoPoo/Entidades/Heroi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projetoPoo/Entidades/Heroi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projetoPoo/Entidades/Npc.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projetoPoo/Entidades/Npc.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projetoPoo/Entidades/Vendedor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projetoPoo/Entidades/Vendedor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projetoPoo/Itens/Arma.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projetoPoo/Itens/Arma.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projetoPoo/Itens/Hunter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projetoPoo/Itens/ItemHeroi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projetoPoo/Itens/ItemHeroi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projetoPoo/Itens/ItemTipoHeroi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projetoPoo/Itens/ItemTipoHeroi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projetoPoo/Itens/Pocao.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projetoPoo/Itens/Pocao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projetoPoo/Itens/Warlock.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projetoPoo/Itens/Warrior.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projetoPoo/Jogo/Jogo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projetoPoo/Jogo/Jogo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entidades/Entidade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entidades/Entidade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entidades/Heroi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entidades/Heroi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entidades/Hunter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entidades/Hunter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entidades/Vendedor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entidades/Vendedor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entidades/Warlock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entidades/Warlock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entidades/Warrior.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entidades/Warrior.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Itens/Arma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Itens/Arma.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Itens/ItemHeroi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Itens/ItemHeroi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Itens/Pocao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Itens/Pocao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Jogo/Jogo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Jogo/Jogo.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,7 +61,7 @@
       <workItem from="1685116127649" duration="129000" />
       <workItem from="1685116377599" duration="315000" />
       <workItem from="1685270376557" duration="18226000" />
-      <workItem from="1685291005538" duration="1518000" />
+      <workItem from="1685291005538" duration="1996000" />
     </task>
     <servers />
   </component>

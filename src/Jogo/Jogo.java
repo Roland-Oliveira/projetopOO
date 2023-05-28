@@ -14,7 +14,23 @@ import java.util.Scanner;
 
 public class Jogo {
     public static void main(String[] args) {
-        labirinto();
+        Scanner scanner = new Scanner(System.in);
+        boolean vencer;
+        int resposta=0;
+
+        do {
+            vencer=labirinto();
+
+            if (!vencer){
+                System.out.println("Game over!!\nDeseja tentar outra vez? \n1-Sim\n2-Não");
+                resposta = scanner.nextInt();
+
+            }else {
+                System.out.println("\"Vitória gloriosa! Seu poder e determinação triunfaram sobre todos os desafios. Você derrotou as forças das trevas, desvendou segredos antigos e se tornou o(a) herói(a) lendário(a) que o reino precisava. Sua bravura será celebrada e seu nome será entoado em canções de coragem e honra. Continue a escrever sua lenda, pois o mundo aguarda suas próximas conquistas! Parabéns por dominar [nome do jogo]!\"");
+            }
+
+        }while (resposta == 1);
+
 
     }
 
