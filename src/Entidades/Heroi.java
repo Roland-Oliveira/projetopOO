@@ -75,10 +75,18 @@ public abstract class Heroi extends Entidade {
         this.setDamage(this.getDamage()+arma.getAtk());
     }
 
+    /**
+     * Adciona ouro ao invetario do jogador!
+     * @param quantidade
+     */
     public void addGold (int quantidade){
         ouro += quantidade;
    }
 
+    /**
+     * Retira ouro do inventario do jogador!
+     * @param quantidade
+     */
    public void lessGold (int quantidade){
         ouro -= quantidade;
    }
@@ -89,6 +97,9 @@ public abstract class Heroi extends Entidade {
 
    public abstract boolean atacar (Npc npc);
 
+    /**
+     * Função de levelUp que é acionada sempre que acaba uma batalha.
+     */
     public void levelUp(){
 
         this.setNivel(this.nivel+=1);
@@ -97,6 +108,9 @@ public abstract class Heroi extends Entidade {
         this.setOuro(this.getOuro()+10);
     }
 
+    /**
+     * Função mostrar poções que roda a poção.
+     */
     public void mostrarPocoes (){
         System.out.println("As pocões:");
         int count = 1;
