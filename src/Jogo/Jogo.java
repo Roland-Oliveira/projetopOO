@@ -322,7 +322,7 @@ public class Jogo {
                 System.out.println("Você recebeu 25 moedas de ouro por salvar a nobre donzela");
                 vocacao.addGold(25);
                 do {
-                    System.out.println("1 0u 2");
+                    System.out.println("Diante do seu herói, há um corredor sombrio com duas portas imponentes. Uma à esquerda e outra à direita. O ar está impregnado de uma aura misteriosa, enquanto o som sutil de gotas d'água ecoa ao longe. O destino do seu herói agora repousa em suas mãos, pois somente uma dessas portas o levará ao próximo desafio. Escolha sabiamente, pois o caminho que você decidir seguir pode determinar o seu sucesso ou a sua derrota. Para qual porta seu herói se dirigirá: a da esquerda ou a da direita? \n1-Esquerda \n2-Direita");
                     escolha =scanner.nextInt();
 
                     switch (escolha){
@@ -417,20 +417,27 @@ public class Jogo {
                 //if com 3 opções para a 8, 9 e 10
                 break;
             case 8:
-                System.out.println("Troll champion outra vez");
-//                if (!batalha){
-//                    System.out.println("Você está morto!");
-//                    return false;
-//                }
+                System.out.println("O mago dos trolls apareceu!");
+                System.out.println("Se inicia uma batalha mortal");
+                System.out.println("-------------------------------");
+                batalha=vocacao.atacar(magoTroll);
+               if (!batalha){
+                  System.out.println("Você está morto!");
+                    return false;
+                }
                 vocacao.tomarPocao();
                 vocacao.levelUp();
                 i = 9;
                 op = 1;
                 break;
             case 9:
-                System.out.println("tesouro mais historia");
+                System.out.println("Parabéns, nobre herói, por ter chegado tão longe em sua jornada épica! Seu esforço incansável e sua coragem diante dos perigos merecem ser recompensados. Como um gesto de gratidão e reconhecimento, eu te presenteio com uma generosa recompensa em ouro.");
+                System.out.println("Você recebeu 30 moedas de ouro");
+                vocacao.addGold(30);
                 do {
-                    System.out.println("1 0u 2");
+                    System.out.println("À esquerda, a porta de madeira maciça revela sinais de desgaste, como se tivesse resistido ao teste do tempo. Ela exala um ar de mistério e promete segredos ocultos. Ao abrir essa porta, seu herói pode se deparar com uma floresta sombria, repleta de criaturas místicas ou um antigo templo esquecido pela civilização.");
+                    System.out.println("Já à direita, a porta de ferro maciço brilha com um brilho intimidante. Seu herói pode sentir a energia pulsante que emana de dentro, sugerindo uma força inquietante. Ao escolher essa porta, ele pode se encontrar em um vulcão escaldante, com lava furiosa e monstros ígneos, ou talvez em um labirinto subterrâneo, onde criaturas vis e armadilhas mortais aguardam.");
+                    System.out.println("As escolhas são suas \n1-Esquerda\n2-Direita");
                     escolha =scanner.nextInt();
 
                     switch (escolha){
@@ -449,18 +456,23 @@ public class Jogo {
                 //if com duas opções 10 ou 11
                 break;
             case 10:
-                System.out.println("Inimigo semi-boss");
-//                if (!batalha){
-//                    System.out.println("Você está morto!");
-//                    return false;
-//                }
+                System.out.println("O Rei dos trolls apareceu!");
+                System.out.println("Oh, poderoso herói, ousa adentrar meu reino? Tua bravura é admirável, porém teu destino já está traçado. Eu sou o temível Rei Troll, soberano destas terras. Suas vitórias sobre inimigos menores não têm valor diante de minha força. Prepare-se para enfrentar o verdadeiro desafio. Será você capaz de derrotar a fúria de um rei?");
+                System.out.println("Se inicia uma batalha mortal");
+                System.out.println("-------------------------------");
+                batalha=vocacao.atacar(reiTroll);
+
+               if (!batalha){
+                   System.out.println("Você está morto!");
+                  return false;
+               }
                 vocacao.tomarPocao();
                 vocacao.levelUp();
                 i = 11;
                 op=1;
                 break;
             case 11:
-                System.out.println("Historia sobre o mundo, preparação luta final");
+                System.out.println("No mundo que antes florescia em paz, a sombra de um terrível demônio se abateu sobre a terra. Os monstros, outrora selvagens e independentes, agora agem sob o comando nefasto desse ser maligno. Em meio ao caos e à destruição, surge o herói destemido,"+ name + ",pronto para enfrentar o desafio supremo.");
                 i = 12;
                 op =1;
                 break;
