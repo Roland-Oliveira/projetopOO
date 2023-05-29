@@ -25,9 +25,10 @@ public class Arma extends ItemHeroi{
     public void lookItem() {
 
 
-        System.out.println("You see ");
-        System.out.println( "name: " + getNome() + ".");
-        System.out.println("price: " + getPreco() + ".");
+
+        System.out.println( "name: " + getNome());
+        System.out.println("price: " + getPreco() );
+        System.out.println("Ataque: " + getAtk() );
 
         for(ItemTipoHeroi item: super.getTipoHeroi()){
 

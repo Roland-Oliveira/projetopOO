@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public abstract class Heroi extends Entidade {
-    private int nivel;
+    private int nivel=1;
     private int ouro;
     private ArrayList<Pocao> pocoes;
     private Arma arma;
@@ -23,7 +23,8 @@ public abstract class Heroi extends Entidade {
 
     @Override
     public void lookCharacter() {
-        System.out.println("You see yourself.");
+        System.out.println("---------------");
+        System.out.println("Parabens você alcançou um novo nivel");
         System.out.println("Hp: " + getHp() + ".");
         System.out.println("Damage: " + getDamage() + ".");
         System.out.println("Meu balanço total é: " + this.ouro);
@@ -97,6 +98,7 @@ public abstract class Heroi extends Entidade {
 
    public abstract boolean atacar (Npc npc);
 
+
     /**
      * Função de levelUp que é acionada sempre que acaba uma batalha.
      */
@@ -106,6 +108,7 @@ public abstract class Heroi extends Entidade {
         this.setHp(this.getHp()+10);
         this.setDamage(this.getDamage()+1);
         this.setOuro(this.getOuro()+10);
+        lookCharacter();
     }
 
     /**
@@ -124,19 +127,29 @@ public abstract class Heroi extends Entidade {
     public void tomarPocao(){
         Scanner scanner = new Scanner(System.in);
 
+        boolean confirm;
 
         if (this.getPocoes().isEmpty()){
             System.out.println("Não tem poções");
         } else {
             mostrarPocoes ();
 
-            System.out.println("Qual poção quer tomar?");
-            int op;
-            op = scanner.nextInt();
-            op--;
+            do {
+                confirm=true;
+                System.out.println("Qual poção quer tomar?");
+                int op;
+                op = scanner.nextInt();
+                op--;
 
-            this.setHp(this.getHp()+pocoes.get(op).getValorCura());
-            pocoes.remove(op);
+
+                if (op > pocoes.size()){
+
+                    confirm=false;
+                } else {
+                    this.setHp(this.getHp() + pocoes.get(op).getValorCura());
+                    pocoes.remove(op);
+                }
+            }while (!confirm);
         }
 
     }
