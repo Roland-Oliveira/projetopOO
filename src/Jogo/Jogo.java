@@ -221,6 +221,7 @@ public class Jogo {
                     System.out.println("Dificuldade? \n1= fácil\n2=difícil");
                     System.out.println("Defina sua dificuldade: ");
                     dificuldade = scanner.nextInt();
+
                     if (dificuldade == 1){
                         do {
 
@@ -312,6 +313,9 @@ public class Jogo {
                     System.out.println("Você está morto!");
                     return false;
                 }
+
+                System.out.println("Parabéns, corajoso(a) "+name+", por sua vitória na batalha épica ");
+                System.out.println("-------------------------------");
                 vocacao.tomarPocao();
                 vocacao.levelUp();
                 i = 3;
@@ -322,7 +326,7 @@ public class Jogo {
                 System.out.println("Você recebeu 25 moedas de ouro por salvar a nobre donzela");
                 vocacao.addGold(25);
                 do {
-                    System.out.println("Diante do seu herói, há um corredor sombrio com duas portas imponentes. Uma à esquerda e outra à direita. O ar está impregnado de uma aura misteriosa, enquanto o som sutil de gotas d'água ecoa ao longe. O destino do seu herói agora repousa em suas mãos, pois somente uma dessas portas o levará ao próximo desafio. Escolha sabiamente, pois o caminho que você decidir seguir pode determinar o seu sucesso ou a sua derrota. Para qual porta seu herói se dirigirá: a da esquerda ou a da direita? \n1-Esquerda \n2-Direita");
+                    System.out.println("Diante do seu herói, há um corredor sombrio com duas portas imponentes.\n Uma à esquerda e outra à direita. O ar está impregnado de uma aura misteriosa, enquanto o som sutil de gotas d'água ecoa ao longe. O destino do seu herói agora repousa em suas mãos, pois somente uma dessas portas o levará ao próximo desafio. Escolha sabiamente, pois o caminho que você decidir seguir pode determinar o seu sucesso ou a sua derrota. Para qual porta seu herói se dirigirá: a da esquerda ou a da direita? \n1-Esquerda \n2-Direita");
                     escolha =scanner.nextInt();
 
                     switch (escolha){
@@ -350,6 +354,8 @@ public class Jogo {
                    System.out.println("Você está morto!");
                    return false;
                 }
+                System.out.println("Parabéns, corajoso(a) "+name+", por sua vitória na batalha épica ");
+                System.out.println("-------------------------------");
                 vocacao.tomarPocao();
                 vocacao.levelUp();
                 i = 5;
@@ -357,9 +363,9 @@ public class Jogo {
                 break;
 
             case 5:
-                System.out.println("Historia");
+                System.out.println("Homem misterioso: Ah, finalmente você chegou! Estava esperando por você, valente aventureiro.Tenho uma oferta especial para você.\n  " + name+":Quem é você? E o que você tem a oferecer?\nHomem Misterioso: Oferço duas opções, escolha com sabedoria \n1-azul \n2-vermelho "  );
                 do {
-                    System.out.println("1 0u 2");
+
                     escolha =scanner.nextInt();
 
                     switch (escolha){
@@ -386,16 +392,18 @@ public class Jogo {
                   System.out.println("Você está morto!");
                    return false;
                }
+                System.out.println("Parabéns, corajoso(a) "+name+", por sua vitória na batalha épica ");
+                System.out.println("-------------------------------");
                 vocacao.tomarPocao();
                 vocacao.levelUp();
                 i = 7;
                 op=1;
                 break;
             case 7:
-                System.out.println("tesouro + historia");
-
+                System.out.println("Homem misterioso: otima escolha como recompensa te ofereço 30 moedas de ouro");
+                vocacao.addGold(30);
                 do {
-                    System.out.println("1 0u 2");
+                    System.out.println("Há duas portas a frente \n1-Esquerda\n2-Direita");
                     escolha =scanner.nextInt();
 
                     switch (escolha){
@@ -425,6 +433,8 @@ public class Jogo {
                   System.out.println("Você está morto!");
                     return false;
                 }
+                System.out.println("Parabéns, corajoso(a) "+name+", por sua vitória na batalha épica ");
+                System.out.println("-------------------------------");
                 vocacao.tomarPocao();
                 vocacao.levelUp();
                 i = 9;
@@ -466,6 +476,8 @@ public class Jogo {
                    System.out.println("Você está morto!");
                   return false;
                }
+                System.out.println("Parabéns, corajoso(a) "+name+", por sua vitória na batalha épica ");
+                System.out.println("-------------------------------");
                 vocacao.tomarPocao();
                 vocacao.levelUp();
                 i = 11;
@@ -478,14 +490,15 @@ public class Jogo {
                 break;
             case 12:
 
-                System.out.println("Final boss");
+                System.out.println("Demonio Javeiro:HUAUAHUAHUA(Risada sombria) veremos se sua força é tão grande quanto a sua estupidez de me desafiar. \nPrepare-se para enfrentar o verdadeiro poder das trevas");
                 batalha=vocacao.atacar(boss);
              if (!batalha){
                   System.out.println("Você está morto!");
                    return false;
                }
+                System.out.println("Parabéns, corajoso(a) "+name+", por sua vitória na batalha épica contra o temível boss!\n Sua determinação, habilidade e coragem foram postas à prova, e você emergiu triunfante. ");
+                System.out.println("-------------------------------");
 
-                vocacao.levelUp();
                 return true;
 
 
