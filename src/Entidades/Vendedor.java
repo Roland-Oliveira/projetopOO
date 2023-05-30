@@ -14,7 +14,9 @@ public class Vendedor {
 
     }
 
-
+    /**
+     * Essa função imprime o inventario
+     */
     public void imprimirInventario(){
         System.out.println("O inventario:");
         int count = 1;
@@ -26,6 +28,10 @@ public class Vendedor {
         }
     }
 
+    /**
+     * Essa função é para a compra de itens
+     * @param vocacao
+     */
     public void venderItem(Heroi vocacao){
 
         int repetir = 0;
@@ -72,6 +78,11 @@ public class Vendedor {
 
 
     }
+
+    /**
+     * Essa função é para adcionar itens
+     * @param item
+     */
     public void addItem(ItemHeroi item){
         this.inventario.add(item);
     }

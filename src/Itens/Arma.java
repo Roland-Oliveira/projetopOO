@@ -21,13 +21,16 @@ public class Arma extends ItemHeroi{
         this.atk = atk;
     }
 
+    /**
+     * Essa função mostra os detalhes do itens
+     */
     @Override
     public void lookItem() {
 
 
 
-        System.out.println( "name: " + getNome());
-        System.out.println("price: " + getPreco() );
+        System.out.println( "nome: " + getNome());
+        System.out.println("preço: " + getPreco() );
         System.out.println("Ataque: " + getAtk() );
 
         for(ItemTipoHeroi item: super.getTipoHeroi()){

@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4d996d6a-23ff-4bc7-80cb-454a6695b2a8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projetoPoo/Entidades/Heroi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projetoPoo/Entidades/Heroi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projetoPoo/Itens/Arma.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projetoPoo/Itens/Arma.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/projetoPoo/Jogo/Jogo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/projetoPoo/Jogo/Jogo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Jogo/Jogo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Jogo/Jogo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entidades/Vendedor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entidades/Vendedor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Itens/Arma.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Itens/Arma.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,6 +70,7 @@
       <workItem from="1685366607337" duration="4563000" />
       <workItem from="1685476782939" duration="1552000" />
       <workItem from="1685481879953" duration="1273000" />
+      <workItem from="1685483546712" duration="446000" />
     </task>
     <servers />
   </component>
